@@ -1,69 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(240, 240, 240, 0.02); /* Fixed transparency */
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f0f0f005;
-        }
+.container {
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners for a modern look */
+    padding: 20px;
+    background-color: #28a745; /* Modern green */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
 
-        .container {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            padding: 20px;
-            background-color: green;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: white; /* Better contrast on green background */
+    text-align: center;
+}
 
-        .title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 15px;
-            color: #333;
-        }
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
 
-        .input-group {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
+.input-group label {
+    width: 120px;
+    text-align: right;
+    margin-right: 10px;
+    color: white; /* Ensures label is readable */
+}
 
-        .input-group label {
-            width: 120px;
-            text-align: right;
-            margin-right: 10px;
-        }
+input[type="text"] {
+    width: 180px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
-        input[type="text"] {
-            width: 150px;
-            padding: 4px;
-            border: 1px solid #ccc;
-            border-radius: 3px;
-        }
+#result {
+    background-color: rgba(240, 240, 240, 0.5);
+    cursor: not-allowed;
+}
 
-        #result {
-            background-color: #f0f0f079;
-            cursor: not-allowed;
-        }
+.button-group {
+    margin-top: 15px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
 
-        .button-group {
-            margin-top: 15px;
-            display: flex;
-            gap: 10px;
-            justify-content: flex-end;
-        }
+button {
+    padding: 8px 14px;
+    border: 1px solid rgba(204, 204, 204, 0.4);
+    border-radius: 5px;
+    background-color: rgba(248, 248, 248, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
 
-        button {
-            padding: 6px 12px;
-            border: 1px solid #cccccc54;
-            border-radius: 3px;
-            background-color: #f8f8f844;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #e8e8e801;
-        }
-   
+button:hover {
+    background-color: rgba(232, 232, 232, 0.8);
+}
